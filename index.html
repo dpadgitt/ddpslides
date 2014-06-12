@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reproducible Pitch Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reproducible Pitch Presentation">
+  <meta name="author" content="Dave Padgitt">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Reproducible Pitch Presentation</h1>
+    <h2>Coursera Developing Data Products</h2>
+    <p>Dave Padgitt<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Goals of Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Learn the basics of Shiny and shinyapps.io</li>
+<li>Continue gaining proficiency with Slidify &amp; Github</li>
+<li>Develop &amp; Deploy a Shiny application/documentation</li>
+<li>Share the application link, server.R and ui.R code</li>
+</ol>
+
+<h3>Project Sub-goals</h3>
+
+<ol>
+<li>Attemp to build on previous project, namely Reproducible Research</li>
+<li>Delve deeper into exploring the (NOAA) storm database</li>
+<li>Meet the minimum project requirements</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Project Strategy</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Utilize the geographical map functionality in library(maps)</li>
+<li>Plot basic geographical data from NOAA data set</li>
+<li>Include an interactive widget: selectInput()</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Basic use of library(maps)</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(maps)
+library(mapproj)
+map(&quot;state&quot;, col = &quot;black&quot;, fill = FALSE, projection = &quot;polyconic&quot;)
+</code></pre>
+
+<p><img src="figure/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>library(maps) is a simple/easy way to add geographical map functionality in R</li>
+<li>Some of the NOAA data lends itself well to geographic plotting</li>
+<li>This project attained its goals!</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Goals of Project'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Project Strategy'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Basic use of library(maps)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
